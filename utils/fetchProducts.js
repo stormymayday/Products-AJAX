@@ -17,7 +17,7 @@ const fetchProducts = async () => {
         const response = await fetch(url);
 
         // Turning response into JSON:
-        const data = response.json();
+        const data = await response.json();
 
         console.log(data);
 
