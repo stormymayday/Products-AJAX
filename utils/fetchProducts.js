@@ -21,7 +21,7 @@ const fetchProducts = async () => {
 
     } catch (error) {
 
-        console.error(error);
+        productsCenter.innerHTML = `<p class="error"> there was an error</>`;
 
     }
 
