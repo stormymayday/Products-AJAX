@@ -4,21 +4,19 @@ const url = 'https://course-api.com/javascript-store-products';
 
 // Element selections
 const productsCenter = getElement('.products-center');
-console.log(productsCenter);
 
 const fetchProducts = async () => {
 
+    // Adding Loading Spinner
+    productsCenter.innerHTML = `<div class="loading"></div>`;
+
     try {
-
-        // Loading
-
 
         // Fetching the data:
         const response = await fetch(url);
 
         // Turning response into JSON:
         const data = await response.json();
-
         console.log(data);
 
     } catch (error) {
