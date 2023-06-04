@@ -1,8 +1,13 @@
+import getElement from "./getElement.js";
+
 const url = 'https://course-api.com/javascript-store-products';
 
 const fetchProducts = async () => {
 
     try {
+
+        // Loading
+
 
         // Fetching the data:
         const response = await fetch(url);
