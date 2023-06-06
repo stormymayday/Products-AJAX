@@ -1,4 +1,5 @@
 import getElement from "./getElement.js";
+import displayProducts from "./displayProducts.js";
 
 const url = 'https://course-api.com/javascript-store-products';
 
@@ -17,7 +18,7 @@ const fetchProducts = async () => {
 
         // Turning response into JSON:
         const data = await response.json();
-        console.log(data);
+        displayProducts(data);
 
     } catch (error) {
 
