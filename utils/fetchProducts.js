@@ -1,5 +1,4 @@
 import getElement from "./getElement.js";
-import displayProducts from "./displayProducts.js";
 
 const url = 'https://course-api.com/javascript-store-products';
 
