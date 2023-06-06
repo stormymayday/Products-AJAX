@@ -18,7 +18,8 @@ const fetchProducts = async () => {
 
         // Turning response into JSON:
         const data = await response.json();
-        displayProducts(data);
+
+        return data;
 
     } catch (error) {
 
