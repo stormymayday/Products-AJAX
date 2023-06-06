@@ -2,7 +2,7 @@ import fetchProducts from "./fetchProducts.js";
 
 const start = async () => {
 
-    console.log(fetchProducts());
+    const data = await fetchProducts();
 
 };
 
