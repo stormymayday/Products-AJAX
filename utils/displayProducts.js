@@ -1,3 +1,5 @@
+import getElement from "./getElement.js";
+
 const displayProducts = (list) => {
 
     const productList = list.map((product) => {
