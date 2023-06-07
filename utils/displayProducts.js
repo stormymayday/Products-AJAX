@@ -1,5 +1,11 @@
 const displayProducts = (list) => {
-    console.log(list);
+
+    const productList = list.map((product) => {
+
+        console.log(product);
+
+    });
+
 };
 
 export default displayProducts;
