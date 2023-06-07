@@ -1,5 +1,7 @@
 import getElement from "./getElement.js";
 
+const productsCenter = getElement('.products-center');
+
 const displayProducts = (list) => {
 
     const productList = list.map((product) => {
