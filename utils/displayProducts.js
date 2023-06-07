@@ -4,7 +4,8 @@ const displayProducts = (list) => {
 
         console.log(product);
         const { id } = product;
-        console.log(id);
+        const { name } = product.fields;
+        console.log(name);
 
     });
 
