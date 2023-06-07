@@ -5,7 +5,8 @@ const displayProducts = (list) => {
         console.log(product);
         const { id } = product;
         const { name, price } = product.fields;
-        console.log(price);
+        const { url: img } = product.fields.image[0];
+        console.log(img);
 
     });
 
