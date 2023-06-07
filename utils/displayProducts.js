@@ -22,6 +22,10 @@ const displayProducts = (list) => {
 
     }).join(``);
 
+    productsCenter.innerHTML = `<div class="products-container">
+    ${productList}
+    </div`;
+
 };
 
 export default displayProducts;
