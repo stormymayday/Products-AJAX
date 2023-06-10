@@ -1,4 +1,4 @@
-import getElement from "./getElement.js";
+import getElement from "../utils/getElement.js";
 import fetchProduct from "./fetchProduct.js";
 
 const productDOM = getElement('.product');
