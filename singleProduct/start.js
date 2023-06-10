@@ -7,7 +7,9 @@ const url = 'https://course-api.com/javascript-store-single-product?id=rec43w3ip
 
 const start = async () => {
 
-    displayProduct(productDOM);
+    const data = await fetchProduct();
+
+    displayProduct(data);
 
 };
 
