@@ -5,4 +5,4 @@ import start from "./utils/start.js";
 // Element where the states (loading, display, error) are toggled:
 const productsCenter = getElement('.products-center');
 
-start();
+// start();
