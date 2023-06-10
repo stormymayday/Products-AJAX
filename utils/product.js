@@ -1,1 +1,1 @@
-console.log(`hello`);
+import getElement from "./getElement.js";
