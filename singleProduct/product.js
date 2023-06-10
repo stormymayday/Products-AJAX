@@ -1,9 +1,4 @@
-import getElement from "../utils/getElement.js";
-import fetchProduct from "./fetchProduct.js";
-import displayProduct from "./displayProduct.js";
+import start from "./start.js";
 
-
-const productDOM = getElement('.product');
-const url = 'https://course-api.com/javascript-store-single-product?id=rec43w3ipXvP28vog';
-
-console.log(displayProduct(productDOM));
+// start();
+console.log(start());

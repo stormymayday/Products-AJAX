@@ -1,4 +1,4 @@
-import getElement from "../utils/getElement";
+import getElement from "../utils/getElement.js";
 import fetchProduct from "./fetchProduct.js";
 import displayProduct from "./displayProduct.js";
 
