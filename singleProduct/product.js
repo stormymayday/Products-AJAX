@@ -33,6 +33,9 @@ const displayProduct = (product) => {
 
     const { url: imgURL } = image[0];
 
+    // Dynamic Page Title
+    document.title = title.toUpperCase();
+
     productDOM.innerHTML = `
     <!-- '.product-wrapper' - start -->
         <div class="product-wrapper">
