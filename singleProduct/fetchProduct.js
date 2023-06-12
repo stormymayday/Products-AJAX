@@ -7,7 +7,12 @@ const fetchProduct = async () => {
 
     try {
 
-        productDOM.innerHTML = `<h4 class="product-loading">Loading</h4>`
+        productDOM.innerHTML = `<h4 class="product-loading">Loading...</h4>`;
+
+        const response = await fetch(url);
+        const date = await response.json();
+
+        return data;
 
     } catch (error) {
 
