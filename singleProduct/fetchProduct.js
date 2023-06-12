@@ -9,7 +9,7 @@ const fetchProduct = async () => {
 
         productDOM.innerHTML = `<h4 class="product-loading">Loading...</h4>`;
 
-        // console.log(window.location.search);
+        // Getting product ID from the URL
         const params = new URLSearchParams(window.location.search);
         const id = params.get('id');
         console.log(id);
