@@ -16,6 +16,8 @@ const fetchProduct = async () => {
 
     } catch (error) {
 
+        productDOM.innerHTML = `<p class="class-error">There was a problem loading the product</p>`;
+
     }
 
     // return productDOM;
