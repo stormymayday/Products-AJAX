@@ -27,13 +27,28 @@ const fetchProduct = async () => {
 
 const displayProduct = (product) => {
 
+    // 
     console.log(product);
+
+    // company, colors, description, name:title, price, image(url:image)
+    const { company, colors, description, name: title, price, image } = product.fields;
+
+    const { url } = image[0];
+
+    console.log(company);
+    console.log(colors);
+    console.log(description);
+    console.log(title);
+    console.log(price);
+    console.log(image);
+    console.log(url);
+
     productDOM.innerHTML = `
     <!-- '.product-wrapper' - start -->
         <div class="product-wrapper">
 
             <!-- column-1 - start -->
-            <img class="img" src="../couch.jpeg" alt="couch">
+            <img class="img" src="../couch.jpg" alt="couch">
             <!-- column-1 - end -->
 
             <!-- column-2 - start -->
