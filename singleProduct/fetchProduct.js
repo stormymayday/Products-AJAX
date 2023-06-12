@@ -5,7 +5,15 @@ const url = 'https://course-api.com/javascript-store-single-product?id=rec43w3ip
 
 const fetchProduct = async () => {
 
-    return productDOM;
+    try {
+
+        productDOM.innerHTML = `<h4 class="product-loading">Loading</h4>`
+
+    } catch (error) {
+
+    }
+
+    // return productDOM;
 
 };
 
