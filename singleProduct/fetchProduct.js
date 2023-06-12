@@ -1,7 +1,7 @@
 import getElement from "../utils/getElement.js";
 
 const productDOM = getElement('.product');
-const url = 'https://course-api.com/javascript-store-single-product?id=rec43w3ipXvP28vog';
+const url = 'https://course-api.com/javascript-store-single-product';
 
 const fetchProduct = async () => {
 
@@ -14,7 +14,7 @@ const fetchProduct = async () => {
         const id = params.get('id');
         console.log(id);
 
-        const response = await fetch(url);
+        const response = await fetch(`${url}?id=${id}`);
         const date = await response.json();
 
         return data;
