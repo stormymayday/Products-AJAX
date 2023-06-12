@@ -49,7 +49,7 @@ const displayProduct = (product) => {
 
                 <h3>${title}</h3>
                 <h5>${company}</h5>
-                <span>${price}</span>
+                <span>${price / 100}</span>
 
                 <!-- '.colors' - start -->
                 <div class="color">
