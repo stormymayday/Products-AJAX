@@ -33,7 +33,7 @@ const displayProduct = (product) => {
     // company, colors, description, name:title, price, image(url:image)
     const { company, colors, description, name: title, price, image } = product.fields;
 
-    const { url } = image[0];
+    const { url: imgURL } = image[0];
 
     console.log(company);
     console.log(colors);
@@ -41,14 +41,14 @@ const displayProduct = (product) => {
     console.log(title);
     console.log(price);
     console.log(image);
-    console.log(url);
+    console.log(imgURL);
 
     productDOM.innerHTML = `
     <!-- '.product-wrapper' - start -->
         <div class="product-wrapper">
 
             <!-- column-1 - start -->
-            <img class="img" src="../couch.jpg" alt="couch">
+            <img class="img" src="${imgURL}" alt="couch">
             <!-- column-1 - end -->
 
             <!-- column-2 - start -->
