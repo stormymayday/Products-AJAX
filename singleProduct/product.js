@@ -37,7 +37,6 @@ const displayProduct = (product) => {
     document.title = title.toUpperCase();
 
     // Colors
-    console.log(colors);
     const colorsList = colors.map((color) => {
         return `<span class="product-color" style="background-color: ${color}"></span>`
     }).join('');
@@ -59,6 +58,8 @@ const displayProduct = (product) => {
 
                 <!-- '.colors' - start -->
                 <div class="colors">
+
+                ${colorsList}
 
                 </div>
                 <!-- '.colors' - end -->
