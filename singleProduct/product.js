@@ -36,6 +36,12 @@ const displayProduct = (product) => {
     // Dynamic Page Title
     document.title = title.toUpperCase();
 
+    // Colors
+    console.log(colors);
+    const colorsList = colors.map((color) => {
+        return `<span class="product-color" style="background-color: ${color}"></span>`
+    });
+
     productDOM.innerHTML = `
     <!-- '.product-wrapper' - start -->
         <div class="product-wrapper">
