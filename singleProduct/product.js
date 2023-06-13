@@ -59,8 +59,7 @@ const displayProduct = (product) => {
 
                 <!-- '.colors' - start -->
                 <div class="colors">
-                    <span class="product-color"></span>
-                    <span class="product-color" style="background-color: red;"></span>
+
                 </div>
                 <!-- '.colors' - end -->
 
