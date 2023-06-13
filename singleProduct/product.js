@@ -58,7 +58,7 @@ const displayProduct = (product) => {
                 <span>${price / 100}</span>
 
                 <!-- '.colors' - start -->
-                <div class="color">
+                <div class="colors">
                     <span class="product-color"></span>
                     <span class="product-color" style="background-color: red;"></span>
                 </div>
