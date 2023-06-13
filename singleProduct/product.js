@@ -40,7 +40,7 @@ const displayProduct = (product) => {
     console.log(colors);
     const colorsList = colors.map((color) => {
         return `<span class="product-color" style="background-color: ${color}"></span>`
-    });
+    }).join('');
 
     productDOM.innerHTML = `
     <!-- '.product-wrapper' - start -->
